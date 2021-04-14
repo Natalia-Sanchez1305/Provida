@@ -1,6 +1,7 @@
 package com.components;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -36,6 +37,15 @@ public class Base {
 	public void click (By locator) {
 		driver.findElement(locator).click();
 	}
+	
+    public void keyEnter(By locator){
+        driver.findElement(locator).sendKeys(Keys.chord(Keys.ENTER));
+    }
+
+    public void keyTab(By locator){
+        driver.findElement(locator).sendKeys(Keys.chord(Keys.TAB));
+    }
+       
 			
 
 }
