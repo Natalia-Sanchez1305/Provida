@@ -16,7 +16,11 @@ public class Screenshot {
 		File scrFile = ((TakesScreenshot)webdriver).getScreenshotAs(OutputType.FILE);
 		//Establecer ruta donde se va a guardar el screenshot
 		String screenshotPath = Paths.get("").toAbsolutePath().toString() + File.separator 
+<<<<<<< HEAD
 				+ "test-output" + File.separator + "ExecutionResult";
+=======
+				+ "test-output" + File.separator + "ExecutionResult"; 
+>>>>>>> refs/remotes/origin/BranchGabo
 		
 		
 		try {
